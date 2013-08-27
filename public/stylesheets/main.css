@@ -1,0 +1,26 @@
+.wrapper {
+    width: 600px;
+    border: 1px solid black;
+    overflow: hidden; /* will contain if #first is longer than #second */
+}
+#content {
+    width: 400px;
+    height: 500px; 
+    float:left; /* add this */
+    border: 1px solid red;
+    overflow-y:scroll;
+}
+#tags {
+    border: 1px solid green;
+    overflow: hidden; /* if you don't want #second to wrap below #first */
+}
+.judge img {
+    height: 20px;
+}
+.judge {
+    float: right;
+}
+.judge-wrapper span {
+    display: inline-block;
+    height: 20px;
+}

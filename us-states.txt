@@ -1,0 +1,51 @@
+Alabama	US-AL	AL	Ala.
+Alaska	US-AK	AK	Alas.
+Arizona	US-AZ	AZ	Ariz.	Az.
+Arkansas	US-AR	AR	Ark.
+California	US-CA	CA	Calif.	Ca.	Cal.	Cali
+Colorado	CO	CL	Colo.	Col.
+Connecticut	US-CT	CT	Conn.	Ct.
+Delaware	US-DE	DE	DL	Del.	De.
+District of Columbia	US-DC	DC	D.C.	Wash. D.C.
+Florida	US-FL	FL	Fla.	Fl.	Flor.
+Georgia	US-GA	GA	Ga.
+Hawaii	HI	HA	H.I.
+Idaho	US-ID	ID	Id.	Ida.
+Illinois	US-IL	IL	Ill.	Il.	Ills.	Ill's
+Indiana	US-IN	IN	Ind.	In.
+Iowa	US-IA	IA	Ia.	Ioa.
+Kansas	US-KS	KS	KA	Kans.	Kan.	Ks.	Ka.
+Kentucky	US-KY	KY	Ky.	Ken.	Kent.
+Louisiana	US-LA	LA	La.
+Maine	US-ME	ME	Me.
+Maryland	US-MD	MD	Md.
+Massachusetts	US-MA	MA	MS	Mass.
+Michigan	US-MI	MI	MC	Mich.
+Minnesota	US-MN	MN	Minn.	Mn.
+Mississippi	US-MS	MS	MI	Miss.
+Missouri	US-MO	MO	Mo.
+Montana	US-MT	MT	Mont.
+Nebraska	US-NE	NE	NB	Nebr.	Neb.
+Nevada	US-NV	NV	Nev.	Nv.
+New Hampshire	US-NH	NH	N.H.
+New Jersey	US-NJ	NJ	N.J.
+New Mexico	US-NM	NM	N. Mex.	N.M.	New M.
+New York	US-NY	NY	N.Y.	N. York
+North Carolina	US-NC	NC	N.C.	N. Car.
+North Dakota	US-ND	ND	N. Dak.	NoDak
+Ohio	US-OH	OH	O.	Oh.
+Oklahoma	US-OK	OK	Okla.	Ok.
+Oregon	US-OR	OR	Oreg.	Ore.	Or.
+Pennsylvania	US-PA	PA	Pa.	Penn.	Penna.
+Rhode Island	US-RI	RI	R.I.
+South Carolina	US-SC	SC	S.C.	S. Car.
+South Dakota	US-SD	SD	S. Dak.	SoDak
+Tennessee	US-TN	TN	Tenn.	Tn.
+Texas	US-TX	TX	Tex.	Tx.
+Utah	US-UT	UT	Ut.
+Vermont	US-VT	VT	Vt.
+Virginia	US-VA	VA	Va.	Virg.
+Washington	US-WA	WA	Wash.	Wa.	Wn.
+West Virginia	US-WV	WV	W. Va.	W.V.	W. Virg.
+Wisconsin	US-WI	WI	Wis.	Wi.	Wisc.
+Wyoming	US-WY	WY	Wyo.	Wy.
