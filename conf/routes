@@ -8,4 +8,6 @@ GET     /                           controllers.Application.index()
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
 
-GET     /geotags					controllers.GeoTagging.geotag(url, name)
+GET     /geotags					controllers.GeoTagging.geotag(url)
+
+POST	/judge						controllers.GeoTagging.judge()

@@ -4,7 +4,7 @@ import play.Project._
 
 object ApplicationBuild extends Build {
 
-  val appName         = "geo-tag-play"
+  val appName         = "geotag"
   val appVersion      = "1.0-SNAPSHOT"
 
   val appDependencies = Seq(
