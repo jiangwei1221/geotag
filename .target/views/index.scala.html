@@ -9,89 +9,88 @@
 <!--
     <link rel="stylesheet" href="@routes.Assets.at("stylesheets/app.css")"/>
 -->
-
     <script src="@routes.Assets.at("javascripts/jquery-1.9.1.min.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.at("javascripts/jquery.cookie.js")" type="text/javascript"></script>
+    <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+    <script src="http://malsup.github.io/jquery.blockUI.js" type="text/javascript"></script>
 
     <!-- Custom CSS/JavaScripts, overriding the included libraries -->
     <link rel="stylesheet" href="@routes.Assets.at("stylesheets/main.css")"/>
-    <script src="http://malsup.github.io/jquery.blockUI.js" type="text/javascript"></script>
     <script src="@routes.Assets.at("javascripts/main.js")" type="text/javascript"></script>
 </head>
 
 <body>
-    <div id="loadingDiv" style="display: none;">
-        <img src="@routes.Assets.at("images/ajax-loader.gif")" />
+    <div class="navbar navbar-fixed-top" id="nav-bar">  
+        <div class="navbar-inner">  
+            <div class="container">  
+                <ul class="nav">  
+                    <li class="active">  
+                    <a class="brand" href="#">Geotagger</a>  
+                    </li>  
+                    <li><a href="#">Feedback</a></li>  
+                    <li><a href="http://yujiangwei.com">About the author</a></li>  
+                </ul>
+                <ul class="nav pull-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Hi, <b id="visitor"></b>!
+                            <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">  
+                            <li>
+                            <a href="javascript:userLogin();">Change your name</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+        </div> 
     </div>
-    <div id="wrapper" class="container">
+    <img id="loadingDiv" style="display: none;" src="@routes.Assets.at("images/ajax-loader-2.gif")" />
+    
+    <div id="loginForm" class="container" style="width: auto; display: none;">
         <div class="row-fluid">
-            <div class="span12 text-center">
-                <h1>Geo-Tagging Named Entities</h1>
-                <div class="input-append ">
+<!--
+            <table>
+                <tr>
+                    <td><input id="login-username" type="text" placeholder="What's your name?" onclick="return false;" onsubmit="return false;" /></td>
+                    <td><button id="login-button" class="btn btn-primary">Enter</button></td>
+                </tr>
+            </table>
+-->
+            <div class="span6">
+                <div class="input-append">
+                    <input id="login-username" type="text" placeholder="What's your name?" onclick="return false;" onsubmit="return false;" />
+                    <button id="login-button" class="btn btn-primary">Enter</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="wrapper" class="container text-center">
+        <div class="row-fluid" id="header">
+            <div class="span12">
+<!--                <h1>Geo-Tagging Named Entities</h1>-->
+                <div class="input-append">
                     <input id="tag-url" type="text" placeholder="Enter the URL of your page" size="" onclick="return false;" onsubmit="return false;">
                     <button id="tag-button" class="btn btn-primary">Go!</button>
                 </div>
                 <hr>
             </div>
         </div>
-        <div class="row-fluid">
+        <div class="row-fluid text-left" id="results">
             <div class="span12">
                 <div class="span8 thumbnail" id="content">
-                    <p>123</p>
-                    <p>123</p>
                 </div>
                 <div class="span4" id="tags">
                     <ul class="thumbnails">
-                        <li class="clearfix" >
+                        <li class="clearfix">
                             <div class="row thumbnail">
                                 <div class="span9 judge-area-left">
                                     <h4>
                                         <a href="#">University of Alberta</a>
                                     </h4>
                                     <h4>Edmonton, Alberta, Canada</h4>
-                                </div>
-                                <div class="span3 judge-area-right">
-                                    <div class="btn-group btn-group-vertical btn-group-justified pull-right" data-toggle="buttons-radio">
-                                        <button class="btn btn-success">Right</button>
-                                        <button class="btn btn-danger">Wrong</button>
-                                        <button class="btn btn-default">Maybe</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="clearfix" >
-                            <div class="row thumbnail pull-right">
-                                <div class="span9 judge-area-left">
-                                    <h4>
-                                        <a href="#" >Luis Felipe Kaufmann Luis Felipe Kaufmann</a>
-                                    </h4>
-                                    <h4>
-                                        <a href="#" >Edmonton, Alberta, Canada</a>
-                                    </h4>
-                                </div>
-                                <div class="span3 judge-area-right">
-                                    <div class="btn-group btn-group-vertical btn-group-justified pull-right" data-toggle="buttons-radio">
-                                        <button class="btn btn-success">Right</button>
-                                        <button class="btn btn-danger">Wrong</button>
-                                        <button class="btn btn-default">Maybe</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="clearfix" >
-                            <div class="row thumbnail pull-right">
-                                <div class="span9 judge-area-left">
-                                    <h4>
-                                        <a href="#" >Luis Felipe Kaufmann Luis Felipe Kaufmann
-                                        Luis Felipe Kaufmann Luis Felipe Kaufmann
-                                        Luis Felipe Kaufmann Luis Felipe Kaufmann
-                                        Luis Felipe Kaufmann Luis Felipe Kaufmann
-                                        Luis Felipe Kaufmann Luis Felipe Kaufmann
-                                        Luis Felipe Kaufmann Luis Felipe Kaufmann
-                                            </a>
-                                    </h4>
-                                    <h4>
-                                        <a href="#" >Edmonton, Alberta, Canada</a>
-                                    </h4>
                                 </div>
                                 <div class="span3 judge-area-right">
                                     <div class="btn-group btn-group-vertical btn-group-justified pull-right" data-toggle="buttons-radio">
