@@ -31,7 +31,7 @@ public class GeoTagging extends Controller {
 				contentArray.add(s);
 			}
 			result.put("content", contentArray);
-			result.put("tags", Json.toJson(select(gts.geotags, 0.5)));
+			result.put("tags", Json.toJson(select(gts.geotags, 0.1)));
 
 			return ok(result);
 		}
