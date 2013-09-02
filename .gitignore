@@ -26,6 +26,7 @@ dist
 /.project
 /RUNNING_PID
 /.settings
+/.target
 test-result
 server.pid
 *.iml
